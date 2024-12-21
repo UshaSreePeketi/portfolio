@@ -1,6 +1,6 @@
 # Project Description
 
-This project focuses on developing a robust machine learning pipeline for predicting and analyzing the target variable *Product Type*, leveraging modern tools and frameworks for efficient deployment and reproducibility. The project integrates interactive visualization, data versioning, containerization, and cloud deployment to ensure scalability and accessibility.
+This project focuses on developing a robust machine learning pipeline for predicting and analyzing the  *Product Type* to sell the best according to the various features associated in the market, leveraging modern tools and frameworks for efficient deployment and reproducibility. The project integrates interactive visualization, data versioning, containerization, and cloud deployment to ensure scalability and accessibility.
 
 ---
 
@@ -24,7 +24,7 @@ This project focuses on developing a robust machine learning pipeline for predic
 
 5. *Dataset*  
    The dataset includes detailed sales and accounting information for American stores between 2010 and 2011, providing insights into store performance and product categorization.  
-   👉 **[Access the Dataset](https://www.kaggle.com/path/to/your-dataset)**  
+   👉 **[Access the Dataset](https://www.kaggle.com/datasets/dsfelix/us-stores-sales)**  
 
 ---
 
