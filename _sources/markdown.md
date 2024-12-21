@@ -1,4 +1,4 @@
-# Project Description
+# Project Description (BEST PRODUCT PREDICTOR)
 
 This project focuses on developing a robust machine learning pipeline for predicting and analyzing the  *Product Type* to sell the best according to the various features associated in the market, leveraging modern tools and frameworks for efficient deployment and reproducibility. The project integrates interactive visualization, data versioning, containerization, and cloud deployment to ensure scalability and accessibility.
 
