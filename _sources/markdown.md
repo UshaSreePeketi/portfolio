@@ -10,7 +10,7 @@ This project focuses on developing a robust machine learning pipeline for predic
 
 1. *Interactive Dashboard*  
    The project includes an interactive dashboard built using *Streamlit*, allowing users to explore the dataset, understand the model's performance, and interact with predictions seamlessly.  
-   👉 *[Access the Streamlit App](http://192.168.1.84:8501)*  
+   👉 *[Access the Streamlit App](https://streamit-yeq5rmwyrm7qimuegkgewr.streamlit.app/)*  
 
 2. *Cloud-Deployed API*  
    The API is deployed on a cloud server, providing a scalable endpoint to interact with the model. This ensures that the application is accessible from anywhere with an internet connection.  
