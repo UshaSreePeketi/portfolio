@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -1796,66 +1796,95 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="fast-api-code-creation">
 <h1><span class="section-number">23. </span>FAST API CODE (creation):<a class="headerlink" href="#fast-api-code-creation" title="Link to this heading">#</a></h1>
-<p>from fastapi import FastAPI
-from pydantic import BaseModel
-import joblib
-import pandas as pd</p>
-<p>#Loading  the best model we have got which is random forest
-model = joblib.load(‘final_model.pkl’)</p>
-<p>#let us Initialize the FastAPI app
-app = FastAPI()</p>
-<p>#let us mapping of encoded labels to product types
-product_type_mapping = {
-0: “Coffee”,
-1: “Espresso”,
-2: “Herbal Tea”,
-3: “Tea”
-}</p>
-<p>class PredictionRequest(BaseModel):
-data: dict  # It accept data as a dictionary where keys are feature names and values are their respective values.</p>
-<p>#let us define the root route
-&#64;app.get(“/”)
-def read_root():
-return {“message”: “Welcome to the FastAPI application!”}</p>
-<p>&#64;app.post(“/predict/”)
-async def predict(request: PredictionRequest):
-# let us convert input data into a DataFrame
-input_data = pd.DataFrame([request.data])</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># letus predict using the model 
-prediction = model.predict(input_data)
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># FAST API CODE (creation):</span>
 
-# Mapping the numeric prediction to the product type
-predicted_product = product_type_mapping.get(prediction[0], &quot;Unknown&quot;)
+<span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-return {&quot;prediction&quot;: predicted_product}
+<span class="c1">#Loading  the best model we have got which is random forest</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;final_model.pkl&#39;</span><span class="p">)</span>
+
+<span class="c1">#let us Initialize the FastAPI app</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+
+<span class="c1">#let us mapping of encoded labels to product types</span>
+<span class="n">product_type_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;Coffee&quot;</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Espresso&quot;</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;Herbal Tea&quot;</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;Tea&quot;</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">PredictionRequest</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">data</span><span class="p">:</span> <span class="nb">dict</span>  <span class="c1"># It accept data as a dictionary where keys are feature names and values are their respective values.</span>
+
+<span class="c1">#let us define the root route</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">read_root</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Welcome to the FastAPI application!&quot;</span><span class="p">}</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/predict/&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">PredictionRequest</span><span class="p">):</span>
+    <span class="c1"># let us convert input data into a DataFrame</span>
+    <span class="n">input_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">request</span><span class="o">.</span><span class="n">data</span><span class="p">])</span>
+    
+    <span class="c1"># letus predict using the model </span>
+    <span class="n">prediction</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+    
+    <span class="c1"># Mapping the numeric prediction to the product type</span>
+    <span class="n">predicted_product</span> <span class="o">=</span> <span class="n">product_type_mapping</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;Unknown&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;prediction&quot;</span><span class="p">:</span> <span class="n">predicted_product</span><span class="p">}</span>
+
+<span class="c1">#let us serve the model</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">uvicorn</span>
+    <span class="n">uvicorn</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>#let us serve the model
-if <strong>name</strong> == “<strong>main</strong>”:
-import uvicorn
-uvicorn.run(app, host=”0.0.0.0”, port=8000)</p>
+</div>
+</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="docker-file">
 <h1><span class="section-number">24. </span>docker file<a class="headerlink" href="#docker-file" title="Link to this heading">#</a></h1>
-<p>#let us  Use the latest Python image from Docker Hub with ARM64 architecture support</p>
-<p>FROM –platform=linux/arm64 python:3.11-slim</p>
-<p>#Set the working directory inside the container
-WORKDIR /app</p>
-<p>RUN apt-get update &amp;&amp; apt-get install -y <br />
-build-essential <br />
-cmake <br />
-python3-dev <br />
-&amp;&amp; rm -rf /var/lib/apt/lists/*</p>
-<p>COPY requirements.txt .</p>
-<p>RUN pip install –no-cache-dir -U pip</p>
-<p>#Install Python dependencies listed in requirements.txt
-RUN pip install –no-cache-dir -r requirements.txt</p>
-<p>#Copy the FastAPI application to the container
-COPY . .</p>
-<p>#Expose port 8000 for the FastAPI app to run
-EXPOSE 8000</p>
-<p>#Command to run the FastAPI application using Uvicorn
-CMD [“uvicorn”, “main:app”, “–host”, “0.0.0.0”, “–port”, “8000”]</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#let us  Use the latest Python image from Docker Hub with ARM64 architecture support</span>
+
+<span class="n">FROM</span> <span class="o">--</span><span class="n">platform</span><span class="o">=</span><span class="n">linux</span><span class="o">/</span><span class="n">arm64</span> <span class="n">python</span><span class="p">:</span><span class="mf">3.11</span><span class="o">-</span><span class="n">slim</span>
+
+<span class="c1">#Set the working directory inside the container</span>
+<span class="n">WORKDIR</span> <span class="o">/</span><span class="n">app</span>
+
+<span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> \
+    <span class="n">build</span><span class="o">-</span><span class="n">essential</span> \
+    <span class="n">cmake</span> \
+    <span class="n">python3</span><span class="o">-</span><span class="n">dev</span> \
+    <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="o">/*</span>
+
+<span class="n">COPY</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span> <span class="o">.</span>
+
+<span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="o">-</span><span class="nb">dir</span> <span class="o">-</span><span class="n">U</span> <span class="n">pip</span>
+
+<span class="c1">#Install Python dependencies listed in requirements.txt</span>
+<span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="o">-</span><span class="nb">dir</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="c1">#Copy the FastAPI application to the container</span>
+<span class="n">COPY</span> <span class="o">.</span> <span class="o">.</span>
+
+<span class="c1">#Expose port 8000 for the FastAPI app to run</span>
+<span class="n">EXPOSE</span> <span class="mi">8000</span>
+
+<span class="c1">#Command to run the FastAPI application using Uvicorn</span>
+<span class="n">CMD</span> <span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span> <span class="s2">&quot;main:app&quot;</span><span class="p">,</span> <span class="s2">&quot;--host&quot;</span><span class="p">,</span> <span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="s2">&quot;--port&quot;</span><span class="p">,</span> <span class="s2">&quot;8000&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="pushed-to-dockerhub">
 <h1><span class="section-number">25. </span>PUSHED TO DOCKERHUB<a class="headerlink" href="#pushed-to-dockerhub" title="Link to this heading">#</a></h1>
@@ -1865,72 +1894,87 @@ CMD [“uvicorn”, “main:app”, “–host”, “0.0.0.0”, “–port”,
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="stream-lit-code">
 <h1><span class="section-number">27. </span>STREAM LIT (CODE):<a class="headerlink" href="#stream-lit-code" title="Link to this heading">#</a></h1>
-<p>import streamlit as st
-import requests</p>
-<p>st.title(“Best Product Type to sell”)
-st.write(“By Usha Sree Peketi”)
-st.write(“Enter the details to check which product to sell!”)</p>
-<p>#Input Fields for the API
-area_code = st.number_input(“Area Code”, min_value=200, max_value=999, step=1)</p>
-<p>#Providing the dropdown options for categorical columns
-state = st.selectbox(“State”, [‘Connecticut’, ‘Washington’, ‘California’, ‘Texas’, ‘New York’, ‘Ohio’,
-‘Illinois’, ‘Louisiana’, ‘Florida’, ‘Wisconsin’, ‘Colorado’, ‘Missouri’,
-‘Iowa’, ‘Massachusetts’, ‘Oklahoma’, ‘Utah’, ‘Oregon’, ‘New Mexico’,
-‘New Hampshire’, ‘Nevada’])</p>
-<p>market = st.selectbox(“Market”, [‘East’, ‘West’, ‘South’, ‘Central’])</p>
-<p>market_size = st.selectbox(“Market Size”, [‘Small Market’, ‘Major Market’])</p>
-<p>product = st.selectbox(“Product”, [‘Columbian’, ‘Green Tea’, ‘Caffe Mocha’, ‘Decaf Espresso’, ‘Lemon’, ‘Mint’,
-‘Darjeeling’, ‘Decaf Irish Cream’, ‘Chamomile’, ‘Earl Grey’, ‘Caffe Latte’,
-‘Amaretto’, ‘Regular Espresso’])</p>
-<p>#Input Fields for numerical data
-sales = st.number_input(“Sales”, min_value=0.0, step=0.01)
-profit = st.number_input(“Profit”, min_value=0.0, step=0.01)
-cogs = st.number_input(“COGS”, min_value=0.0, step=0.01)
-marketing = st.number_input(“Marketing”, min_value=0.0, step=0.01)
-total_expenses = st.number_input(“Total Expenses”, min_value=0.0, step=0.01)
-margin = st.number_input(“Margin”, min_value=0.0, step=0.01)</p>
-<p>#Button to Trigger Prediction
-if st.button(“Classify”):
-# Validate input to ensure all fields are filled
-if state and market and market_size and product and area_code and sales is not None and profit is not None and cogs is not None and marketing is not None and total_expenses is not None and margin is not None:
-try:
-api_url = “<a class="reference external" href="http://18.217.75.50:8000/predict/">http://18.217.75.50:8000/predict/</a>”</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        # Construct the payload
-        payload = {
-            &quot;data&quot;: {
-                &quot;Area_Code&quot;: area_code,
-                &quot;State&quot;: state,
-                &quot;Market&quot;: market,
-                &quot;Market_Size&quot;: market_size,
-                &quot;Sales&quot;: sales,
-                &quot;Profit&quot;: profit,
-                &quot;COGS&quot;: cogs,
-                &quot;Product&quot;: product,
-                &quot;Marketing&quot;: marketing,
-                &quot;Total_Expenses&quot;: total_expenses,
-                &quot;Margin&quot;: margin
-            }
-        }
-        
-        # Make POST Request
-        response = requests.post(api_url, json=payload)
-        
-        # Parse Response
-        if response.status_code == 200:
-            result = response.json()
-            st.success(f&quot;Prediction: {result[&#39;prediction&#39;]}&quot;)
-        else:
-            st.error(f&quot;Error: {response.json().get(&#39;detail&#39;, &#39;Unable to get prediction from the API.&#39;)}&quot;)
-    except Exception as e:
-        st.error(f&quot;An error occurred: {str(e)}&quot;)
-else:
-    st.warning(&quot;Please fill out all required fields.&quot;)
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># STREAM LIT (CODE):</span>
+<span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Best Product Type to sell&quot;</span><span class="p">)</span>
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;By Usha Sree Peketi&quot;</span><span class="p">)</span>
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Enter the details to check which product to sell!&quot;</span><span class="p">)</span>
+
+<span class="c1">#Input Fields for the API</span>
+<span class="n">area_code</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Area Code&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">max_value</span><span class="o">=</span><span class="mi">999</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#Providing the dropdown options for categorical columns</span>
+<span class="n">state</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;State&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Connecticut&#39;</span><span class="p">,</span> <span class="s1">&#39;Washington&#39;</span><span class="p">,</span> <span class="s1">&#39;California&#39;</span><span class="p">,</span> <span class="s1">&#39;Texas&#39;</span><span class="p">,</span> <span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;Ohio&#39;</span><span class="p">,</span>
+                               <span class="s1">&#39;Illinois&#39;</span><span class="p">,</span> <span class="s1">&#39;Louisiana&#39;</span><span class="p">,</span> <span class="s1">&#39;Florida&#39;</span><span class="p">,</span> <span class="s1">&#39;Wisconsin&#39;</span><span class="p">,</span> <span class="s1">&#39;Colorado&#39;</span><span class="p">,</span> <span class="s1">&#39;Missouri&#39;</span><span class="p">,</span> 
+                               <span class="s1">&#39;Iowa&#39;</span><span class="p">,</span> <span class="s1">&#39;Massachusetts&#39;</span><span class="p">,</span> <span class="s1">&#39;Oklahoma&#39;</span><span class="p">,</span> <span class="s1">&#39;Utah&#39;</span><span class="p">,</span> <span class="s1">&#39;Oregon&#39;</span><span class="p">,</span> <span class="s1">&#39;New Mexico&#39;</span><span class="p">,</span> 
+                               <span class="s1">&#39;New Hampshire&#39;</span><span class="p">,</span> <span class="s1">&#39;Nevada&#39;</span><span class="p">])</span>
+
+<span class="n">market</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;Market&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;East&#39;</span><span class="p">,</span> <span class="s1">&#39;West&#39;</span><span class="p">,</span> <span class="s1">&#39;South&#39;</span><span class="p">,</span> <span class="s1">&#39;Central&#39;</span><span class="p">])</span>
+
+<span class="n">market_size</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;Market Size&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Small Market&#39;</span><span class="p">,</span> <span class="s1">&#39;Major Market&#39;</span><span class="p">])</span>
+
+<span class="n">product</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Columbian&#39;</span><span class="p">,</span> <span class="s1">&#39;Green Tea&#39;</span><span class="p">,</span> <span class="s1">&#39;Caffe Mocha&#39;</span><span class="p">,</span> <span class="s1">&#39;Decaf Espresso&#39;</span><span class="p">,</span> <span class="s1">&#39;Lemon&#39;</span><span class="p">,</span> <span class="s1">&#39;Mint&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;Darjeeling&#39;</span><span class="p">,</span> <span class="s1">&#39;Decaf Irish Cream&#39;</span><span class="p">,</span> <span class="s1">&#39;Chamomile&#39;</span><span class="p">,</span> <span class="s1">&#39;Earl Grey&#39;</span><span class="p">,</span> <span class="s1">&#39;Caffe Latte&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;Amaretto&#39;</span><span class="p">,</span> <span class="s1">&#39;Regular Espresso&#39;</span><span class="p">])</span>
+
+<span class="c1">#Input Fields for numerical data</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Sales&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">profit</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Profit&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">cogs</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;COGS&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">marketing</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Marketing&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">total_expenses</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Total Expenses&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">margin</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Margin&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+
+<span class="c1">#Button to Trigger Prediction</span>
+<span class="k">if</span> <span class="n">st</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="s2">&quot;Classify&quot;</span><span class="p">):</span>
+    <span class="c1"># Validate input to ensure all fields are filled</span>
+    <span class="k">if</span> <span class="n">state</span> <span class="ow">and</span> <span class="n">market</span> <span class="ow">and</span> <span class="n">market_size</span> <span class="ow">and</span> <span class="n">product</span> <span class="ow">and</span> <span class="n">area_code</span> <span class="ow">and</span> <span class="n">sales</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">profit</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">cogs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">marketing</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">total_expenses</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">margin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">api_url</span> <span class="o">=</span> <span class="s2">&quot;http://18.217.75.50:8000/predict/&quot;</span>
+            
+            <span class="c1"># Construct the payload</span>
+            <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;Area_Code&quot;</span><span class="p">:</span> <span class="n">area_code</span><span class="p">,</span>
+                    <span class="s2">&quot;State&quot;</span><span class="p">:</span> <span class="n">state</span><span class="p">,</span>
+                    <span class="s2">&quot;Market&quot;</span><span class="p">:</span> <span class="n">market</span><span class="p">,</span>
+                    <span class="s2">&quot;Market_Size&quot;</span><span class="p">:</span> <span class="n">market_size</span><span class="p">,</span>
+                    <span class="s2">&quot;Sales&quot;</span><span class="p">:</span> <span class="n">sales</span><span class="p">,</span>
+                    <span class="s2">&quot;Profit&quot;</span><span class="p">:</span> <span class="n">profit</span><span class="p">,</span>
+                    <span class="s2">&quot;COGS&quot;</span><span class="p">:</span> <span class="n">cogs</span><span class="p">,</span>
+                    <span class="s2">&quot;Product&quot;</span><span class="p">:</span> <span class="n">product</span><span class="p">,</span>
+                    <span class="s2">&quot;Marketing&quot;</span><span class="p">:</span> <span class="n">marketing</span><span class="p">,</span>
+                    <span class="s2">&quot;Total_Expenses&quot;</span><span class="p">:</span> <span class="n">total_expenses</span><span class="p">,</span>
+                    <span class="s2">&quot;Margin&quot;</span><span class="p">:</span> <span class="n">margin</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            
+            <span class="c1"># Make POST Request</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+            
+            <span class="c1"># Parse Response</span>
+            <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+                <span class="n">st</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Prediction: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;prediction&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">st</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;detail&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Unable to get prediction from the API.&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">st</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;An error occurred: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">st</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Please fill out all required fields.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">st</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Fill in the fields above and click &#39;Classify&#39; to get a prediction.&quot;</span><span class="p">)</span>
+
+<span class="c1">#Footer</span>
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Powered by Streamlit &amp; FastAPI&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>else:
-<a class="reference external" href="http://st.info">st.info</a>(“Fill in the fields above and click ‘Classify’ to get a prediction.”)</p>
-<p>#Footer
-st.write(“Powered by Streamlit &amp; FastAPI”)</p>
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
