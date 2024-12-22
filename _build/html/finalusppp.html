@@ -1,0 +1,2109 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Notebook1 &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'finalusppp';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to USP’s World
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">1. Project Description (BEST PRODUCT PREDICTOR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finaluspp.html">2. Notebook1</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ffinalusppp.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/finalusppp.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Notebook1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Notebook1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-the-data-base">CONNECTING TO THE DATA BASE</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-3nf-database">CREATING THE 3NF DATABASE</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-the-data-sales-csv-inserting-into-database">READING THE DATA SALES.CSV INSERTING INTO DATABASE</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#veryfying-the-data-inserted">VERYFYING THE DATA INSERTED</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fetching-the-data-from-database-into-pandas-data-frame">FETCHING THE DATA FROM DATABASE INTO PANDAS DATA FRAME</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-exploration-and-eda">DATA EXPLORATION AND EDA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#test-train-split">TEST TRAIN SPLIT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-matrix-and-data-cleaning-tasks">CORRELATION MATRIX and DATA CLEANING TASKS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-outliers">plotting outliers</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dagshub-authenction-for-ml-flow">DAGSHUB AUTHENCTION FOR ML FLOW</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-1-logistic-regression">EXPERIMENT -1 LOGISTIC REGRESSION</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-2-logistsic-random-forest-ridge">EXPERIMENT -2 (logistsic,random forest,ridge)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-2-xbg">EXPERIMENT -2 XBG</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-3">EXPERIMENT 3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-4">EXPERIMENT 4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-5">EXPERIMENT 5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-6-custom1">EXPERIMENT 6 (custom1)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-7-custom-experiment-2">EXPERIMENT 7 (custom experiment-2)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#f1-score-plotting-and-choosing-the-best-model">F1 SCORE PLOTTING AND CHOOSING THE BEST MODEL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#saving-the-model-using-joblib">SAVING THE MODEL USING JOBLIB</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-api-code-creation">FAST API CODE (creation):</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-file">docker file</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushed-to-dockerhub">PUSHED TO DOCKERHUB</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployed-the-docker-image-to-aws-ecs">deployed the docker image to aws ecs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#stream-lit-code">STREAM LIT (CODE):</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="notebook1">
+<h1>Notebook1<a class="headerlink" href="#notebook1" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="connecting-to-the-data-base">
+<h1>CONNECTING TO THE DATA BASE<a class="headerlink" href="#connecting-to-the-data-base" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let us connect to SQLite database</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;sales_db.sqlite&#39;</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-the-3nf-database">
+<h1>CREATING THE 3NF DATABASE<a class="headerlink" href="#creating-the-3nf-database" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let us create the normalized tables</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">CREATE TABLE IF NOT EXISTS sales (</span>
+<span class="s1">    Area_Code TEXT,</span>
+<span class="s1">    State TEXT,</span>
+<span class="s1">    Market TEXT,</span>
+<span class="s1">    Market_Size TEXT,</span>
+<span class="s1">    Date TEXT,</span>
+<span class="s1">    Sales REAL,</span>
+<span class="s1">    Profit REAL,</span>
+<span class="s1">    COGS REAL,</span>
+<span class="s1">    ProductID TEXT</span>
+<span class="s1">)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">CREATE TABLE IF NOT EXISTS products (</span>
+<span class="s1">    ProductID TEXT PRIMARY KEY,</span>
+<span class="s1">    Product_Type TEXT,</span>
+<span class="s1">    Product TEXT</span>
+<span class="s1">)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">CREATE TABLE IF NOT EXISTS marketing (</span>
+<span class="s1">    Area_Code TEXT PRIMARY KEY,</span>
+<span class="s1">    Marketing REAL,</span>
+<span class="s1">    Total_Expenses REAL,</span>
+<span class="s1">    Margin REAL,</span>
+<span class="s1">    Budget_Sales REAL,</span>
+<span class="s1">    Budget_Profit REAL,</span>
+<span class="s1">    Budget_COGS REAL</span>
+<span class="s1">)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sales_data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">products_data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">marketing_data</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="reading-the-data-sales-csv-inserting-into-database">
+<h1>READING THE DATA SALES.CSV INSERTING INTO DATABASE<a class="headerlink" href="#reading-the-data-sales-csv-inserting-into-database" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;sales.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+        <span class="c1"># Prepare data for sales table</span>
+        <span class="n">sales_data</span><span class="o">.</span><span class="n">append</span><span class="p">((</span>
+            <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Area Code&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Market&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Market Size&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">],</span>
+            <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Profit&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;COGS&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;ProductId&#39;</span><span class="p">]</span>
+        <span class="p">))</span>
+
+        <span class="c1"># Prepare data for products table</span>
+        <span class="n">products_data</span><span class="o">.</span><span class="n">append</span><span class="p">((</span>
+            <span class="n">row</span><span class="p">[</span><span class="s1">&#39;ProductId&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Product Type&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Product&#39;</span><span class="p">]</span>
+        <span class="p">))</span>
+
+        <span class="c1"># Prepare data for marketing table</span>
+        <span class="n">marketing_data</span><span class="o">.</span><span class="n">append</span><span class="p">((</span>
+            <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Area Code&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Marketing&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Total Expenses&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Margin&#39;</span><span class="p">],</span>
+            <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Budget Sales&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Budget Profit&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Budget COGS&#39;</span><span class="p">]</span>
+        <span class="p">))</span>
+
+<span class="c1"># let us use `executemany` to insert data into the database</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">INSERT OR IGNORE INTO sales (Area_Code, State, Market, Market_Size, Date, Sales, Profit, COGS, ProductID)</span>
+<span class="s1">VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="n">sales_data</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">INSERT OR IGNORE INTO products (ProductID, Product_Type, Product)</span>
+<span class="s1">VALUES (?, ?, ?)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="n">products_data</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">INSERT OR IGNORE INTO marketing (Area_Code, Marketing, Total_Expenses, Margin, Budget_Sales, Budget_Profit, Budget_COGS)</span>
+<span class="s1">VALUES (?, ?, ?, ?, ?, ?, ?)</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="n">marketing_data</span><span class="p">)</span>
+
+<span class="c1"># Commit the changes</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="veryfying-the-data-inserted">
+<h1>VERYFYING THE DATA INSERTED<a class="headerlink" href="#veryfying-the-data-inserted" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let us Verify the data</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM sales LIMIT 5&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM products LIMIT 5&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM marketing LIMIT 5&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+<span class="c1"># Close the connection</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;203&#39;, &#39;Connecticut&#39;, &#39;East&#39;, &#39;Small Market&#39;, &#39;04/01/10 00:00:00&#39;, 292.0, 107.0, 116.0, &#39;2&#39;)
+(&#39;203&#39;, &#39;Connecticut&#39;, &#39;East&#39;, &#39;Small Market&#39;, &#39;07/01/10 00:00:00&#39;, 225.0, 75.0, 90.0, &#39;2&#39;)
+(&#39;203&#39;, &#39;Connecticut&#39;, &#39;East&#39;, &#39;Small Market&#39;, &#39;11/01/10 00:00:00&#39;, 325.0, 122.0, 130.0, &#39;2&#39;)
+(&#39;203&#39;, &#39;Connecticut&#39;, &#39;East&#39;, &#39;Small Market&#39;, &#39;12/01/10 00:00:00&#39;, 289.0, 105.0, 115.0, &#39;2&#39;)
+(&#39;203&#39;, &#39;Connecticut&#39;, &#39;East&#39;, &#39;Small Market&#39;, &#39;07/01/11 00:00:00&#39;, 223.0, 104.0, 90.0, &#39;2&#39;)
+(&#39;2&#39;, &#39;Coffee&#39;, &#39;Columbian&#39;)
+(&#39;13&#39;, &#39;Tea&#39;, &#39;Green Tea&#39;)
+(&#39;5&#39;, &#39;Espresso&#39;, &#39;Caffe Mocha&#39;)
+(&#39;6&#39;, &#39;Espresso&#39;, &#39;Decaf Espresso&#39;)
+(&#39;9&#39;, &#39;Herbal Tea&#39;, &#39;Lemon&#39;)
+(&#39;203&#39;, 38.0, 69.0, 176.0, 270.0, 110.0, 110.0)
+(&#39;206&#39;, 16.0, 39.0, 77.0, 160.0, 70.0, 60.0)
+(&#39;209&#39;, 40.0, 63.0, -21.0, 130.0, -80.0, 160.0)
+(&#39;210&#39;, 75.0, 96.0, 288.0, 660.0, 270.0, 300.0)
+(&#39;212&#39;, 22.0, 34.0, 117.0, 210.0, 100.0, 80.0)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fetching-the-data-from-database-into-pandas-data-frame">
+<h1>FETCHING THE DATA FROM DATABASE INTO PANDAS DATA FRAME<a class="headerlink" href="#fetching-the-data-from-database-into-pandas-data-frame" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Connect to the SQLite database</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;sales_db.sqlite&#39;</span><span class="p">)</span>
+
+
+<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    s.Area_Code,</span>
+<span class="s2">    s.State,</span>
+<span class="s2">    s.Market,</span>
+<span class="s2">    s.Market_Size,</span>
+<span class="s2">    s.Date,</span>
+<span class="s2">    s.Sales,</span>
+<span class="s2">    s.Profit,</span>
+<span class="s2">    s.COGS,</span>
+<span class="s2">    p.Product_Type,</span>
+<span class="s2">    p.Product,</span>
+<span class="s2">    m.Marketing,</span>
+<span class="s2">    m.Total_Expenses,</span>
+<span class="s2">    m.Margin</span>
+<span class="s2">FROM sales s</span>
+<span class="s2">JOIN products p ON s.ProductID = p.ProductID</span>
+<span class="s2">JOIN marketing m ON s.Area_Code = m.Area_Code;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># let us execute the query and load the results into a Pandas DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="c1"># Close the database connection</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Area_Code        State Market   Market_Size               Date  Sales  \
+0       203  Connecticut   East  Small Market  04/01/10 00:00:00  292.0   
+1       203  Connecticut   East  Small Market  07/01/10 00:00:00  225.0   
+2       203  Connecticut   East  Small Market  11/01/10 00:00:00  325.0   
+3       203  Connecticut   East  Small Market  12/01/10 00:00:00  289.0   
+4       203  Connecticut   East  Small Market  07/01/11 00:00:00  223.0   
+
+   Profit   COGS Product_Type    Product  Marketing  Total_Expenses  Margin  
+0   107.0  116.0       Coffee  Columbian       38.0            69.0   176.0  
+1    75.0   90.0       Coffee  Columbian       38.0            69.0   176.0  
+2   122.0  130.0       Coffee  Columbian       38.0            69.0   176.0  
+3   105.0  115.0       Coffee  Columbian       38.0            69.0   176.0  
+4   104.0   90.0       Coffee  Columbian       38.0            69.0   176.0  
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-exploration-and-eda">
+<h1>DATA EXPLORATION AND EDA<a class="headerlink" href="#data-exploration-and-eda" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let us do Basic Data Exploration</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>             Sales       Profit         COGS    Marketing  Total_Expenses  \
+count  8496.000000  8496.000000  8496.000000  8496.000000     8496.000000   
+mean    192.987524    61.097693    84.433145    31.027778       57.586158   
+std     151.124231   101.702559    67.245811    24.057429       31.670792   
+min      17.000000  -638.000000     0.000000     5.000000       16.000000   
+25%     100.000000    17.000000    43.000000    15.000000       39.000000   
+50%     138.000000    40.000000    60.000000    23.000000       46.000000   
+75%     230.000000    92.000000   100.000000    39.000000       66.000000   
+max     912.000000   778.000000   364.000000   127.000000      178.000000   
+
+            Margin  
+count  8496.000000  
+mean    125.374765  
+std     120.073789  
+min     -67.000000  
+25%      56.000000  
+50%      84.000000  
+75%     144.000000  
+max     613.000000  
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 8496 entries, 0 to 8495
+Data columns (total 13 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   Area_Code       8496 non-null   object 
+ 1   State           8496 non-null   object 
+ 2   Market          8496 non-null   object 
+ 3   Market_Size     8496 non-null   object 
+ 4   Date            8496 non-null   object 
+ 5   Sales           8496 non-null   float64
+ 6   Profit          8496 non-null   float64
+ 7   COGS            8496 non-null   float64
+ 8   Product_Type    8496 non-null   object 
+ 9   Product         8496 non-null   object 
+ 10  Marketing       8496 non-null   float64
+ 11  Total_Expenses  8496 non-null   float64
+ 12  Margin          8496 non-null   float64
+dtypes: float64(6), object(7)
+memory usage: 863.0+ KB
+None
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">categorical_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;COGS&#39;</span><span class="p">]</span>  <span class="c1"># Replace with your actual categorical columns</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">categorical_columns</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unique values in column </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unique values in column COGS:
+[116.  90. 130. 115. 103. 125.  20.  36.  19.  24.  53.  60.  61.  75.
+  65.  63.  64.  62.  55.  48.  43.  42.  47.  49.  85.  76.  80.  67.
+  79.  74.  68.  35.  34.  44.  37.  69.  92.  95. 110. 133. 124.  93.
+  96. 105.  58.  59.  54.  57.  78.  83.  71. 123.  40.  56.  52.  46.
+  45.  50.  30.  33.  22. 127. 154. 284. 121. 247. 251.  39. 113. 244.
+ 104.  81.  86. 135. 173. 260. 239. 258. 364. 249. 234. 253. 228. 214.
+ 225. 118. 266.  84.  77.  41.  51. 145. 162. 149.  21.  18. 144. 191.
+ 252. 243. 100. 196. 291.  87.  91.  94.  72.  38. 170. 181. 114.  82.
+ 112.  32.  97.  70.  31.  99. 153. 155.  88. 132. 263. 207. 148. 238.
+ 200. 224. 272. 257.  89.  29. 279. 265. 271. 235.  25.  23.  28.  10.
+  15.   0. 109. 141. 245. 270. 111. 101. 209.  27. 102. 241. 120. 213.
+  98. 134. 161.  16.  17. 295. 122. 240. 255. 316. 108. 250. 356. 211.
+ 294. 302. 195.  14. 311.]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="test-train-split">
+<h1>TEST TRAIN SPLIT<a class="headerlink" href="#test-train-split" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check class distribution</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Product_Type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+
+<span class="c1"># Train/test split with stratification (if needed)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Product_Type&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Product_Type&#39;</span><span class="p">]</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Train shape: </span><span class="si">{</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">, Test shape: </span><span class="si">{</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Product_Type
+Espresso      2352
+Coffee        2112
+Herbal Tea    2112
+Tea           1920
+Name: count, dtype: int64
+Train shape: (6796, 12), Test shape: (1700, 12)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="correlation-matrix-and-data-cleaning-tasks">
+<h1>CORRELATION MATRIX and DATA CLEANING TASKS<a class="headerlink" href="#correlation-matrix-and-data-cleaning-tasks" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Product_Type_encoded&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Product_Type&#39;</span><span class="p">])</span>
+
+<span class="c1"># Selecting the numerical columns for correlation</span>
+<span class="n">numerical_columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;float64&#39;</span><span class="p">,</span> <span class="s1">&#39;int64&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+
+<span class="c1"># let us Compute the correlation matrix </span>
+<span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">numerical_columns</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+
+<span class="c1"># Plot the heatmap with the target variable included</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Correlation Matrix with Target Variable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/7b159e5fde0a4c5f49a578e0cb425b3a250dc584130926448f63de3c5cfc5f76.png" src="_images/7b159e5fde0a4c5f49a578e0cb425b3a250dc584130926448f63de3c5cfc5f76.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let us investigate negative values</span>
+<span class="n">negative_profit_margin</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Profit&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Margin&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">negative_profit_margin</span><span class="p">)</span>
+
+<span class="c1"># let us Replace negatives with 0 or a placeholder (based on business rules)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Profit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Profit&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Margin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Margin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Area_Code          State Market   Market_Size               Date  Sales  \
+14         203    Connecticut   East  Small Market  06/01/10 00:00:00  128.0   
+23         203    Connecticut   East  Small Market  12/01/11 00:00:00  140.0   
+68         206     Washington   West  Small Market  08/01/10 00:00:00  105.0   
+130        209     California   West  Major Market  05/01/10 00:00:00  106.0   
+131        209     California   West  Major Market  07/01/10 00:00:00   87.0   
+...        ...            ...    ...           ...                ...    ...   
+8359       971         Oregon   West  Small Market  11/01/11 00:00:00  133.0   
+8453       978  Massachusetts   East  Major Market  12/01/11 00:00:00  106.0   
+8491       985      Louisiana  South  Small Market  07/01/10 00:00:00  113.0   
+8492       985      Louisiana  South  Small Market  08/01/10 00:00:00  105.0   
+8493       985      Louisiana  South  Small Market  12/01/10 00:00:00  131.0   
+
+      Profit   COGS Product_Type      Product  Marketing  Total_Expenses  \
+14      -2.0   53.0     Espresso  Caffe Mocha       38.0            69.0   
+23      -3.0   55.0     Espresso  Caffe Mocha       38.0            69.0   
+68      -8.0   44.0          Tea    Green Tea       16.0            39.0   
+130    -84.0  127.0       Coffee     Amaretto       40.0            63.0   
+131   -138.0  154.0       Coffee     Amaretto       40.0            63.0   
+...      ...    ...          ...          ...        ...             ...   
+8359    -6.0   52.0       Coffee     Amaretto       49.0            79.0   
+8453   -30.0   47.0     Espresso  Caffe Mocha       23.0            54.0   
+8491    -6.0   47.0     Espresso  Caffe Latte       13.0            25.0   
+8492    -7.0   44.0     Espresso  Caffe Latte       13.0            25.0   
+8493    -3.0   55.0     Espresso  Caffe Latte       13.0            25.0   
+
+      Margin  
+14     176.0  
+23     176.0  
+68      77.0  
+130    -21.0  
+131    -21.0  
+...      ...  
+8359    75.0  
+8453   420.0  
+8491    71.0  
+8492    71.0  
+8493    71.0  
+
+[1306 rows x 13 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0   2010-04-01
+1   2010-07-01
+2   2010-11-01
+3   2010-12-01
+4   2011-07-01
+Name: Date, dtype: datetime64[ns]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-48-111663ed1450&gt;:1: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df[&#39;Date&#39;] = pd.to_datetime(df[&#39;Date&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="plotting-outliers">
+<h1>plotting outliers<a class="headerlink" href="#plotting-outliers" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#let us  visualize outliers using boxplots</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">numerical_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">,</span> <span class="s1">&#39;Profit&#39;</span><span class="p">,</span> <span class="s1">&#39;COGS&#39;</span><span class="p">,</span> <span class="s1">&#39;Marketing&#39;</span><span class="p">,</span> <span class="s1">&#39;Total_Expenses&#39;</span><span class="p">,</span> <span class="s1">&#39;Margin&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">numerical_columns</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Boxplot of </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6e647860dd9c64c75f7c178cd65d8de82fb161b5c2028c8c2ad2a5b7ba5ce5e4.png" src="_images/6e647860dd9c64c75f7c178cd65d8de82fb161b5c2028c8c2ad2a5b7ba5ce5e4.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Product_Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Date&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Exclude non-predictive columns</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Product_Type&#39;</span><span class="p">]</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;New Train shape: </span><span class="si">{</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">, Test shape: </span><span class="si">{</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>New Train shape: (5947, 11), Test shape: (2549, 11)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="dagshub-authenction-for-ml-flow">
+<h1>DAGSHUB AUTHENCTION FOR ML FLOW<a class="headerlink" href="#dagshub-authenction-for-ml-flow" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>dagshub<span class="w"> </span>mlflow
+
+<span class="kn">from</span> <span class="nn">dagshub</span> <span class="kn">import</span> <span class="n">init</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+<span class="kn">import</span> <span class="nn">mlflow.sklearn</span>
+
+<span class="c1"># Initializing the DagsHub</span>
+<span class="n">init</span><span class="p">(</span>
+    <span class="n">repo_owner</span><span class="o">=</span><span class="s1">&#39;ushasreepeketi&#39;</span><span class="p">,</span>  
+    <span class="n">repo_name</span><span class="o">=</span><span class="s1">&#39;my-first-repo&#39;</span><span class="p">,</span>           
+    <span class="n">mlflow</span><span class="o">=</span><span class="kc">True</span>                          
+<span class="p">)</span>
+
+
+<span class="n">mlflow</span><span class="o">.</span><span class="n">set_experiment</span><span class="p">(</span><span class="s2">&quot;ML_Project_Experiments&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: dagshub in /usr/local/lib/python3.10/dist-packages (0.4.0)
+Requirement already satisfied: mlflow in /usr/local/lib/python3.10/dist-packages (2.19.0)
+Requirement already satisfied: PyYAML&gt;=5 in /usr/local/lib/python3.10/dist-packages (from dagshub) (6.0.2)
+Requirement already satisfied: appdirs&gt;=1.4.4 in /usr/local/lib/python3.10/dist-packages (from dagshub) (1.4.4)
+Requirement already satisfied: click&gt;=8.0.4 in /usr/local/lib/python3.10/dist-packages (from dagshub) (8.1.7)
+Requirement already satisfied: httpx&gt;=0.23.0 in /usr/local/lib/python3.10/dist-packages (from dagshub) (0.28.1)
+Requirement already satisfied: GitPython&gt;=3.1.29 in /usr/local/lib/python3.10/dist-packages (from dagshub) (3.1.43)
+Requirement already satisfied: rich&gt;=13.1.0 in /usr/local/lib/python3.10/dist-packages (from dagshub) (13.9.4)
+Requirement already satisfied: dacite~=1.6.0 in /usr/local/lib/python3.10/dist-packages (from dagshub) (1.6.0)
+Requirement already satisfied: tenacity&gt;=8.2.2 in /usr/local/lib/python3.10/dist-packages (from dagshub) (9.0.0)
+Requirement already satisfied: gql[requests] in /usr/local/lib/python3.10/dist-packages (from dagshub) (3.5.0)
+Requirement already satisfied: dataclasses-json in /usr/local/lib/python3.10/dist-packages (from dagshub) (0.6.7)
+Requirement already satisfied: pandas in /usr/local/lib/python3.10/dist-packages (from dagshub) (2.2.2)
+Requirement already satisfied: treelib&gt;=1.6.4 in /usr/local/lib/python3.10/dist-packages (from dagshub) (1.7.0)
+Requirement already satisfied: pathvalidate&gt;=3.0.0 in /usr/local/lib/python3.10/dist-packages (from dagshub) (3.2.1)
+Requirement already satisfied: python-dateutil in /usr/local/lib/python3.10/dist-packages (from dagshub) (2.8.2)
+Requirement already satisfied: boto3 in /usr/local/lib/python3.10/dist-packages (from dagshub) (1.35.86)
+Requirement already satisfied: dagshub-annotation-converter&gt;=0.1.0 in /usr/local/lib/python3.10/dist-packages (from dagshub) (0.1.2)
+Requirement already satisfied: mlflow-skinny==2.19.0 in /usr/local/lib/python3.10/dist-packages (from mlflow) (2.19.0)
+Requirement already satisfied: Flask&lt;4 in /usr/local/lib/python3.10/dist-packages (from mlflow) (3.1.0)
+Requirement already satisfied: Jinja2&lt;4,&gt;=2.11 in /usr/local/lib/python3.10/dist-packages (from mlflow) (3.1.4)
+Requirement already satisfied: alembic!=1.10.0,&lt;2 in /usr/local/lib/python3.10/dist-packages (from mlflow) (1.14.0)
+Requirement already satisfied: docker&lt;8,&gt;=4.0.0 in /usr/local/lib/python3.10/dist-packages (from mlflow) (7.1.0)
+Requirement already satisfied: graphene&lt;4 in /usr/local/lib/python3.10/dist-packages (from mlflow) (3.4.3)
+Requirement already satisfied: gunicorn&lt;24 in /usr/local/lib/python3.10/dist-packages (from mlflow) (23.0.0)
+Requirement already satisfied: markdown&lt;4,&gt;=3.3 in /usr/local/lib/python3.10/dist-packages (from mlflow) (3.7)
+Requirement already satisfied: matplotlib&lt;4 in /usr/local/lib/python3.10/dist-packages (from mlflow) (3.8.0)
+Requirement already satisfied: numpy&lt;3 in /usr/local/lib/python3.10/dist-packages (from mlflow) (1.26.4)
+Requirement already satisfied: pyarrow&lt;19,&gt;=4.0.0 in /usr/local/lib/python3.10/dist-packages (from mlflow) (17.0.0)
+Requirement already satisfied: scikit-learn&lt;2 in /usr/local/lib/python3.10/dist-packages (from mlflow) (1.6.0)
+Requirement already satisfied: scipy&lt;2 in /usr/local/lib/python3.10/dist-packages (from mlflow) (1.13.1)
+Requirement already satisfied: sqlalchemy&lt;3,&gt;=1.4.0 in /usr/local/lib/python3.10/dist-packages (from mlflow) (2.0.36)
+Requirement already satisfied: cachetools&lt;6,&gt;=5.0.0 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (5.5.0)
+Requirement already satisfied: cloudpickle&lt;4 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (3.1.0)
+Requirement already satisfied: databricks-sdk&lt;1,&gt;=0.20.0 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (0.40.0)
+Requirement already satisfied: importlib_metadata!=4.7.0,&lt;9,&gt;=3.7.0 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (8.5.0)
+Requirement already satisfied: opentelemetry-api&lt;3,&gt;=1.9.0 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (1.29.0)
+Requirement already satisfied: opentelemetry-sdk&lt;3,&gt;=1.9.0 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (1.29.0)
+Requirement already satisfied: packaging&lt;25 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (24.2)
+Requirement already satisfied: protobuf&lt;6,&gt;=3.12.0 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (4.25.5)
+Requirement already satisfied: requests&lt;3,&gt;=2.17.3 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (2.32.3)
+Requirement already satisfied: sqlparse&lt;1,&gt;=0.4.0 in /usr/local/lib/python3.10/dist-packages (from mlflow-skinny==2.19.0-&gt;mlflow) (0.5.3)
+Requirement already satisfied: Mako in /usr/local/lib/python3.10/dist-packages (from alembic!=1.10.0,&lt;2-&gt;mlflow) (1.3.8)
+Requirement already satisfied: typing-extensions&gt;=4 in /usr/local/lib/python3.10/dist-packages (from alembic!=1.10.0,&lt;2-&gt;mlflow) (4.12.2)
+Requirement already satisfied: lxml in /usr/local/lib/python3.10/dist-packages (from dagshub-annotation-converter&gt;=0.1.0-&gt;dagshub) (5.3.0)
+Requirement already satisfied: pillow in /usr/local/lib/python3.10/dist-packages (from dagshub-annotation-converter&gt;=0.1.0-&gt;dagshub) (11.0.0)
+Requirement already satisfied: pydantic&gt;=2.0.0 in /usr/local/lib/python3.10/dist-packages (from dagshub-annotation-converter&gt;=0.1.0-&gt;dagshub) (2.10.3)
+Requirement already satisfied: urllib3&gt;=1.26.0 in /usr/local/lib/python3.10/dist-packages (from docker&lt;8,&gt;=4.0.0-&gt;mlflow) (2.2.3)
+Requirement already satisfied: Werkzeug&gt;=3.1 in /usr/local/lib/python3.10/dist-packages (from Flask&lt;4-&gt;mlflow) (3.1.3)
+Requirement already satisfied: itsdangerous&gt;=2.2 in /usr/local/lib/python3.10/dist-packages (from Flask&lt;4-&gt;mlflow) (2.2.0)
+Requirement already satisfied: blinker&gt;=1.9 in /usr/local/lib/python3.10/dist-packages (from Flask&lt;4-&gt;mlflow) (1.9.0)
+Requirement already satisfied: gitdb&lt;5,&gt;=4.0.1 in /usr/local/lib/python3.10/dist-packages (from GitPython&gt;=3.1.29-&gt;dagshub) (4.0.11)
+Requirement already satisfied: graphql-core&lt;3.3,&gt;=3.1 in /usr/local/lib/python3.10/dist-packages (from graphene&lt;4-&gt;mlflow) (3.2.5)
+Requirement already satisfied: graphql-relay&lt;3.3,&gt;=3.1 in /usr/local/lib/python3.10/dist-packages (from graphene&lt;4-&gt;mlflow) (3.2.0)
+Requirement already satisfied: anyio in /usr/local/lib/python3.10/dist-packages (from httpx&gt;=0.23.0-&gt;dagshub) (3.7.1)
+Requirement already satisfied: certifi in /usr/local/lib/python3.10/dist-packages (from httpx&gt;=0.23.0-&gt;dagshub) (2024.12.14)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.10/dist-packages (from httpx&gt;=0.23.0-&gt;dagshub) (1.0.7)
+Requirement already satisfied: idna in /usr/local/lib/python3.10/dist-packages (from httpx&gt;=0.23.0-&gt;dagshub) (3.10)
+Requirement already satisfied: h11&lt;0.15,&gt;=0.13 in /usr/local/lib/python3.10/dist-packages (from httpcore==1.*-&gt;httpx&gt;=0.23.0-&gt;dagshub) (0.14.0)
+Requirement already satisfied: MarkupSafe&gt;=2.0 in /usr/local/lib/python3.10/dist-packages (from Jinja2&lt;4,&gt;=2.11-&gt;mlflow) (3.0.2)
+Requirement already satisfied: contourpy&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;4-&gt;mlflow) (1.3.1)
+Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;4-&gt;mlflow) (0.12.1)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;4-&gt;mlflow) (4.55.3)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;4-&gt;mlflow) (1.4.7)
+Requirement already satisfied: pyparsing&gt;=2.3.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;4-&gt;mlflow) (3.2.0)
+Requirement already satisfied: pytz&gt;=2020.1 in /usr/local/lib/python3.10/dist-packages (from pandas-&gt;dagshub) (2024.2)
+Requirement already satisfied: tzdata&gt;=2022.7 in /usr/local/lib/python3.10/dist-packages (from pandas-&gt;dagshub) (2024.2)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil-&gt;dagshub) (1.17.0)
+Requirement already satisfied: markdown-it-py&gt;=2.2.0 in /usr/local/lib/python3.10/dist-packages (from rich&gt;=13.1.0-&gt;dagshub) (3.0.0)
+Requirement already satisfied: pygments&lt;3.0.0,&gt;=2.13.0 in /usr/local/lib/python3.10/dist-packages (from rich&gt;=13.1.0-&gt;dagshub) (2.18.0)
+Requirement already satisfied: joblib&gt;=1.2.0 in /usr/local/lib/python3.10/dist-packages (from scikit-learn&lt;2-&gt;mlflow) (1.4.2)
+Requirement already satisfied: threadpoolctl&gt;=3.1.0 in /usr/local/lib/python3.10/dist-packages (from scikit-learn&lt;2-&gt;mlflow) (3.5.0)
+Requirement already satisfied: greenlet!=0.4.17 in /usr/local/lib/python3.10/dist-packages (from sqlalchemy&lt;3,&gt;=1.4.0-&gt;mlflow) (3.1.1)
+Requirement already satisfied: botocore&lt;1.36.0,&gt;=1.35.86 in /usr/local/lib/python3.10/dist-packages (from boto3-&gt;dagshub) (1.35.86)
+Requirement already satisfied: jmespath&lt;2.0.0,&gt;=0.7.1 in /usr/local/lib/python3.10/dist-packages (from boto3-&gt;dagshub) (1.0.1)
+Requirement already satisfied: s3transfer&lt;0.11.0,&gt;=0.10.0 in /usr/local/lib/python3.10/dist-packages (from boto3-&gt;dagshub) (0.10.4)
+Requirement already satisfied: marshmallow&lt;4.0.0,&gt;=3.18.0 in /usr/local/lib/python3.10/dist-packages (from dataclasses-json-&gt;dagshub) (3.23.2)
+Requirement already satisfied: typing-inspect&lt;1,&gt;=0.4.0 in /usr/local/lib/python3.10/dist-packages (from dataclasses-json-&gt;dagshub) (0.9.0)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.6 in /usr/local/lib/python3.10/dist-packages (from gql[requests]-&gt;dagshub) (1.18.3)
+Requirement already satisfied: backoff&lt;3.0,&gt;=1.11.1 in /usr/local/lib/python3.10/dist-packages (from gql[requests]-&gt;dagshub) (2.2.1)
+Requirement already satisfied: requests-toolbelt&lt;2,&gt;=1.0.0 in /usr/local/lib/python3.10/dist-packages (from gql[requests]-&gt;dagshub) (1.0.0)
+Requirement already satisfied: sniffio&gt;=1.1 in /usr/local/lib/python3.10/dist-packages (from anyio-&gt;httpx&gt;=0.23.0-&gt;dagshub) (1.3.1)
+Requirement already satisfied: exceptiongroup in /usr/local/lib/python3.10/dist-packages (from anyio-&gt;httpx&gt;=0.23.0-&gt;dagshub) (1.2.2)
+Requirement already satisfied: google-auth~=2.0 in /usr/local/lib/python3.10/dist-packages (from databricks-sdk&lt;1,&gt;=0.20.0-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (2.27.0)
+Requirement already satisfied: smmap&lt;6,&gt;=3.0.1 in /usr/local/lib/python3.10/dist-packages (from gitdb&lt;5,&gt;=4.0.1-&gt;GitPython&gt;=3.1.29-&gt;dagshub) (5.0.1)
+Requirement already satisfied: zipp&gt;=3.20 in /usr/local/lib/python3.10/dist-packages (from importlib_metadata!=4.7.0,&lt;9,&gt;=3.7.0-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (3.21.0)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.10/dist-packages (from markdown-it-py&gt;=2.2.0-&gt;rich&gt;=13.1.0-&gt;dagshub) (0.1.2)
+Requirement already satisfied: deprecated&gt;=1.2.6 in /usr/local/lib/python3.10/dist-packages (from opentelemetry-api&lt;3,&gt;=1.9.0-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (1.2.15)
+Requirement already satisfied: opentelemetry-semantic-conventions==0.50b0 in /usr/local/lib/python3.10/dist-packages (from opentelemetry-sdk&lt;3,&gt;=1.9.0-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (0.50b0)
+Requirement already satisfied: annotated-types&gt;=0.6.0 in /usr/local/lib/python3.10/dist-packages (from pydantic&gt;=2.0.0-&gt;dagshub-annotation-converter&gt;=0.1.0-&gt;dagshub) (0.7.0)
+Requirement already satisfied: pydantic-core==2.27.1 in /usr/local/lib/python3.10/dist-packages (from pydantic&gt;=2.0.0-&gt;dagshub-annotation-converter&gt;=0.1.0-&gt;dagshub) (2.27.1)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.10/dist-packages (from requests&lt;3,&gt;=2.17.3-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (3.4.0)
+Requirement already satisfied: mypy-extensions&gt;=0.3.0 in /usr/local/lib/python3.10/dist-packages (from typing-inspect&lt;1,&gt;=0.4.0-&gt;dataclasses-json-&gt;dagshub) (1.0.0)
+Requirement already satisfied: multidict&gt;=4.0 in /usr/local/lib/python3.10/dist-packages (from yarl&lt;2.0,&gt;=1.6-&gt;gql[requests]-&gt;dagshub) (6.1.0)
+Requirement already satisfied: propcache&gt;=0.2.0 in /usr/local/lib/python3.10/dist-packages (from yarl&lt;2.0,&gt;=1.6-&gt;gql[requests]-&gt;dagshub) (0.2.1)
+Requirement already satisfied: wrapt&lt;2,&gt;=1.10 in /usr/local/lib/python3.10/dist-packages (from deprecated&gt;=1.2.6-&gt;opentelemetry-api&lt;3,&gt;=1.9.0-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (1.17.0)
+Requirement already satisfied: pyasn1-modules&gt;=0.2.1 in /usr/local/lib/python3.10/dist-packages (from google-auth~=2.0-&gt;databricks-sdk&lt;1,&gt;=0.20.0-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (0.4.1)
+Requirement already satisfied: rsa&lt;5,&gt;=3.1.4 in /usr/local/lib/python3.10/dist-packages (from google-auth~=2.0-&gt;databricks-sdk&lt;1,&gt;=0.20.0-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (4.9)
+Requirement already satisfied: pyasn1&lt;0.7.0,&gt;=0.4.6 in /usr/local/lib/python3.10/dist-packages (from pyasn1-modules&gt;=0.2.1-&gt;google-auth~=2.0-&gt;databricks-sdk&lt;1,&gt;=0.20.0-&gt;mlflow-skinny==2.19.0-&gt;mlflow) (0.6.1)
+</pre></div>
+</div>
+<div class="output text_html"><pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Initialized MLflow to track repo <span style="color: #008000; text-decoration-color: #008000">"ushasreepeketi/my-first-repo"</span>
+</pre>
+</div><div class="output text_html"><pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Repository ushasreepeketi/my-first-repo initialized!
+</pre>
+</div><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Experiment: artifact_location=&#39;mlflow-artifacts:/9a2acbaef5b44313bd3d4e4973759481&#39;, creation_time=1734596403106, experiment_id=&#39;0&#39;, last_update_time=1734596403106, lifecycle_stage=&#39;active&#39;, name=&#39;ML_Project_Experiments&#39;, tags={}&gt;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="experiment-1-logistic-regression">
+<h1>EXPERIMENT -1 LOGISTIC REGRESSION<a class="headerlink" href="#experiment-1-logistic-regression" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span><span class="p">,</span> <span class="n">GridSearchCV</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+<span class="kn">import</span> <span class="nn">mlflow.sklearn</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">f1_score</span>
+<span class="n">f1_scores1</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1"># let us do the preprocessing pipeline</span>
+<span class="n">numerical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">,</span> <span class="s1">&#39;Profit&#39;</span><span class="p">,</span> <span class="s1">&#39;COGS&#39;</span><span class="p">,</span> <span class="s1">&#39;Marketing&#39;</span><span class="p">,</span> <span class="s1">&#39;Total_Expenses&#39;</span><span class="p">]</span>
+<span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="s1">&#39;Market&#39;</span><span class="p">,</span> <span class="s1">&#39;Market_Size&#39;</span><span class="p">]</span>
+
+<span class="n">numerical_transformer</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">categorical_transformer</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">handle_unknown</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="n">preprocessor</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">(</span>
+    <span class="n">transformers</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;num&#39;</span><span class="p">,</span> <span class="n">numerical_transformer</span><span class="p">,</span> <span class="n">numerical_features</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="n">categorical_transformer</span><span class="p">,</span> <span class="n">categorical_features</span><span class="p">)</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># let us define logistic regression pipeline</span>
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;preprocessor&#39;</span><span class="p">,</span> <span class="n">preprocessor</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">class_weight</span><span class="o">=</span><span class="s1">&#39;balanced&#39;</span><span class="p">))</span>
+<span class="p">])</span>
+
+<span class="c1"># Hyperparameter tuning (optional)</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;classifier__C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;classifier__solver&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;liblinear&#39;</span><span class="p">,</span> <span class="s1">&#39;saga&#39;</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1_macro&#39;</span><span class="p">)</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Log the experiment for mlflow</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Logistic Regression&quot;</span><span class="p">):</span>
+    <span class="c1"># Cross-validation</span>
+    <span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1_macro&#39;</span><span class="p">)</span>
+    <span class="n">mean_cv_score</span> <span class="o">=</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    <span class="n">std_cv_score</span> <span class="o">=</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+
+    <span class="c1"># Fit the pipeline on full training data</span>
+    <span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">train_score</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">test_score</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+    <span class="n">f1_scores1</span><span class="p">[</span><span class="s1">&#39;Logistic Regression&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mean_cv_score</span>
+
+    <span class="c1"># Log metrics</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;mean_cv_f1_score&quot;</span><span class="p">,</span> <span class="n">mean_cv_score</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;std_cv_f1_score&quot;</span><span class="p">,</span> <span class="n">std_cv_score</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;train_score&quot;</span><span class="p">,</span> <span class="n">train_score</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;test_score&quot;</span><span class="p">,</span> <span class="n">test_score</span><span class="p">)</span>
+
+    <span class="c1"># Log model</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">sklearn</span><span class="o">.</span><span class="n">log_model</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="s2">&quot;logistic_regression_pipeline&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Print Results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Logistic Regression: Train Score: </span><span class="si">{</span><span class="n">train_score</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Test Score: </span><span class="si">{</span><span class="n">test_score</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best Params: </span><span class="si">{</span><span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+<span class=" -Color -Color-Red">2024/12/20 23:09:42 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Logistic Regression: Train Score: 0.35, Test Score: 0.35
+Best Params: {&#39;classifier__C&#39;: 0.1, &#39;classifier__solver&#39;: &#39;liblinear&#39;}
+🏃 View run Logistic Regression at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/5fec7d1568204a819df0ac16287d90b4
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+
+<span class="c1"># let us Encode the target variable</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">y_train_encoded</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_test_encoded</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+
+<span class="c1"># let us Check the mapping</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Class Mapping:&quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">label_encoder</span><span class="o">.</span><span class="n">classes_</span><span class="p">,</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">label_encoder</span><span class="o">.</span><span class="n">classes_</span><span class="p">))))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Class Mapping: {&#39;Coffee&#39;: 0, &#39;Espresso&#39;: 1, &#39;Herbal Tea&#39;: 2, &#39;Tea&#39;: 3}
+     Area_Code          State   Market   Market_Size  Sales  Profit  COGS  \
+851        360     Washington     West  Small Market  188.0    86.0  72.0   
+5171       405       Oklahoma    South  Small Market  221.0    72.0  88.0   
+6573       603  New Hampshire     East  Small Market  116.0     0.0  45.0   
+7087       708       Illinois  Central  Major Market  190.0    92.0  78.0   
+456        303       Colorado  Central  Major Market  135.0    33.0  54.0   
+
+             Product  Marketing  Total_Expenses  Margin  
+851        Columbian       21.0            43.0    99.0  
+5171  Decaf Espresso       15.0            27.0    60.0  
+6573     Caffe Mocha       12.0            35.0    55.0  
+7087           Lemon       39.0            61.0   176.0  
+456   Decaf Espresso       27.0            39.0   144.0  
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="experiment-2-logistsic-random-forest-ridge">
+<h1>EXPERIMENT -2 (logistsic,random forest,ridge)<a class="headerlink" href="#experiment-2-logistsic-random-forest-ridge" title="Link to this heading">#</a></h1>
+<p>#xgb is done in next chunk</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span><span class="p">,</span> <span class="n">RidgeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1">#let us define classifiers</span>
+<span class="n">classifiers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;LogisticRegression&#39;</span><span class="p">:</span> <span class="n">LogisticRegression</span><span class="p">(),</span>
+    <span class="s1">&#39;RandomForest&#39;</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(),</span>
+    <span class="s1">&#39;RidgeClassifier&#39;</span><span class="p">:</span> <span class="n">RidgeClassifier</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="n">random_forest_pipeline</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="c1"># Loop through classifiers</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">clf</span> <span class="ow">in</span> <span class="n">classifiers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="n">name</span><span class="p">):</span>
+        <span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;preprocessor&#39;</span><span class="p">,</span> <span class="n">preprocessor</span><span class="p">),</span>  <span class="c1"># Assuming preprocessor is already defined</span>
+            <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span>
+        <span class="p">])</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Cross-validation with encoded labels</span>
+            <span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_encoded</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1_macro&#39;</span><span class="p">)</span>
+            <span class="n">mean_cv_score</span> <span class="o">=</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+            <span class="n">std_cv_score</span> <span class="o">=</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+
+            <span class="c1"># Fit the pipeline on full training data</span>
+            <span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_encoded</span><span class="p">)</span>
+            <span class="n">train_score</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_encoded</span><span class="p">)</span>
+            <span class="n">test_score</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test_encoded</span><span class="p">)</span>
+
+            <span class="c1"># Log metrics</span>
+            <span class="n">f1_scores1</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">mean_cv_score</span>
+            <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;mean_cv_f1_score&quot;</span><span class="p">,</span> <span class="n">mean_cv_score</span><span class="p">)</span>
+            <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;std_cv_f1_score&quot;</span><span class="p">,</span> <span class="n">std_cv_score</span><span class="p">)</span>
+            <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;train_score&quot;</span><span class="p">,</span> <span class="n">train_score</span><span class="p">)</span>
+            <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;test_score&quot;</span><span class="p">,</span> <span class="n">test_score</span><span class="p">)</span>
+
+            <span class="c1"># Log model</span>
+            <span class="n">mlflow</span><span class="o">.</span><span class="n">sklearn</span><span class="o">.</span><span class="n">log_model</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">_pipeline&quot;</span><span class="p">)</span>
+            <span class="c1"># Store the RandomForest pipeline for saving later</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;RandomForest&#39;</span><span class="p">:</span>
+                <span class="n">random_forest_pipeline</span> <span class="o">=</span> <span class="n">pipeline</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: Train Score: </span><span class="si">{</span><span class="n">train_score</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Test Score: </span><span class="si">{</span><span class="n">test_score</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error with </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">2024/12/20 23:09:56 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>LogisticRegression: Train Score: 0.38, Test Score: 0.37
+🏃 View run LogisticRegression at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/800535d81b70481e85d2f17adf7ed890
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">2024/12/20 23:10:34 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RandomForest: Train Score: 1.00, Test Score: 0.96
+🏃 View run RandomForest at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/bc0d82c81337493b9ce7d74ad1a662e7
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">2024/12/20 23:10:43 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RidgeClassifier: Train Score: 0.36, Test Score: 0.35
+🏃 View run RidgeClassifier at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/fea8fdcc299e411b84a4ade3beb69f2b
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+
+<span class="c1"># let us apply label encoding to categorical columns</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">])</span>
+<span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Market&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Market&#39;</span><span class="p">])</span>
+<span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Market_Size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Market_Size&#39;</span><span class="p">])</span>
+<span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Product&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Product&#39;</span><span class="p">])</span>
+<span class="n">X_train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+
+<span class="c1"># let us convert any non-numeric columns to numeric </span>
+<span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>State              int64
+Market             int64
+Market_Size        int64
+Sales            float64
+Profit           float64
+                  ...   
+Area_Code_971       bool
+Area_Code_972       bool
+Area_Code_978       bool
+Area_Code_979       bool
+Area_Code_985       bool
+Length: 165, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="experiment-2-xbg">
+<h1>EXPERIMENT -2 XBG<a class="headerlink" href="#experiment-2-xbg" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xgboost</span> <span class="k">as</span> <span class="nn">xgb</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">f1_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">StratifiedKFold</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
+
+<span class="c1"># let us do One-hot encode categorical features for XGBoost</span>
+<span class="n">categorical_columns</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="s1">&#39;Market&#39;</span><span class="p">,</span> <span class="s1">&#39;Market_Size&#39;</span><span class="p">,</span> <span class="s1">&#39;Product&#39;</span><span class="p">]</span>
+<span class="n">X_train_encoded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">categorical_columns</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">X_test_encoded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">categorical_columns</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># let us align columns in case train and test differ after encoding</span>
+<span class="n">X_train_encoded</span><span class="p">,</span> <span class="n">X_test_encoded</span> <span class="o">=</span> <span class="n">X_train_encoded</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">X_test_encoded</span><span class="p">,</span> <span class="n">join</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Handle XGBClassifier separately</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;XGBClassifier&quot;</span><span class="p">):</span>
+    <span class="n">skf</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+    <span class="n">f1_scores</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">train_idx</span><span class="p">,</span> <span class="n">val_idx</span> <span class="ow">in</span> <span class="n">skf</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">X_train_encoded</span><span class="p">,</span> <span class="n">y_train_encoded</span><span class="p">):</span>
+        <span class="n">X_fold_train</span><span class="p">,</span> <span class="n">X_fold_val</span> <span class="o">=</span> <span class="n">X_train_encoded</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_idx</span><span class="p">],</span> <span class="n">X_train_encoded</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">val_idx</span><span class="p">]</span>
+        <span class="n">y_fold_train</span><span class="p">,</span> <span class="n">y_fold_val</span> <span class="o">=</span> <span class="n">y_train_encoded</span><span class="p">[</span><span class="n">train_idx</span><span class="p">],</span> <span class="n">y_train_encoded</span><span class="p">[</span><span class="n">val_idx</span><span class="p">]</span>
+
+        <span class="c1"># Create DMatrix</span>
+        <span class="n">dtrain</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">DMatrix</span><span class="p">(</span><span class="n">X_fold_train</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">y_fold_train</span><span class="p">)</span>
+        <span class="n">dval</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">DMatrix</span><span class="p">(</span><span class="n">X_fold_val</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">y_fold_val</span><span class="p">)</span>
+
+        <span class="c1"># Train XGBoost model</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;objective&quot;</span><span class="p">:</span> <span class="s2">&quot;multi:softmax&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;num_class&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">label_encoder</span><span class="o">.</span><span class="n">classes_</span><span class="p">),</span>
+            <span class="s2">&quot;eval_metric&quot;</span><span class="p">:</span> <span class="s2">&quot;mlogloss&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;seed&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+        <span class="p">}</span>
+
+        <span class="n">model</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">dtrain</span><span class="p">,</span> <span class="n">num_boost_round</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">evals</span><span class="o">=</span><span class="p">[(</span><span class="n">dval</span><span class="p">,</span> <span class="s2">&quot;validation&quot;</span><span class="p">)],</span> <span class="n">verbose_eval</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">dval</span><span class="p">)</span>
+        <span class="n">f1</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_fold_val</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;macro&#39;</span><span class="p">)</span>
+        <span class="n">f1_scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f1</span><span class="p">)</span>
+
+    <span class="n">mean_f1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">f1_scores</span><span class="p">)</span>
+    <span class="n">std_f1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">f1_scores</span><span class="p">)</span>
+
+    <span class="c1"># Log metrics</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;mean_cv_f1_score&quot;</span><span class="p">,</span> <span class="n">mean_f1</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;std_cv_f1_score&quot;</span><span class="p">,</span> <span class="n">std_f1</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;XGBClassifier: Mean F1-Score: </span><span class="si">{</span><span class="n">mean_f1</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Std F1-Score: </span><span class="si">{</span><span class="n">std_f1</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XGBClassifier: Mean F1-Score: 1.00, Std F1-Score: 0.00
+🏃 View run XGBClassifier at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/1ffe647359ca427c936a60cd1ffbe1d1
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="experiment-3">
+<h1>EXPERIMENT 3<a class="headerlink" href="#experiment-3" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Feature Engineering&quot;</span><span class="p">):</span>
+    <span class="c1"># Adding the  engineered features</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Profit_Margin_Ratio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Profit&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">]</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cost_Per_Marketing&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;COGS&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Marketing&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># let us Log the  parameters</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;new_features&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Profit_Margin_Ratio&quot;</span><span class="p">,</span> <span class="s2">&quot;Cost_Per_Marketing&quot;</span><span class="p">])</span>
+
+    <span class="c1"># Recompute preprocessing</span>
+    <span class="n">numerical_features</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="s1">&#39;Profit_Margin_Ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;Cost_Per_Marketing&#39;</span><span class="p">])</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Feature engineering logged to MLFlow.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Feature engineering logged to MLFlow.
+🏃 View run Feature Engineering at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/bccadd6d00f840e7b4cee9b7c09e65e2
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="experiment-4">
+<h1>EXPERIMENT 4<a class="headerlink" href="#experiment-4" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="kn">import</span> <span class="n">VarianceThreshold</span><span class="p">,</span> <span class="n">SelectKBest</span><span class="p">,</span> <span class="n">f_classif</span>
+
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Feature Selection&quot;</span><span class="p">):</span>
+    <span class="c1"># Variance Threshold</span>
+    <span class="n">selector</span> <span class="o">=</span> <span class="n">VarianceThreshold</span><span class="p">(</span><span class="n">threshold</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+    <span class="n">X_selected</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+
+    <span class="c1"># ANOVA F-test</span>
+    <span class="n">anova_selector</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">f_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">X_selected_anova</span> <span class="o">=</span> <span class="n">anova_selector</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+    <span class="c1"># Log feature selection</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;variance_threshold&quot;</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;anova_top_k&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Feature selection logged to MLFlow.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Feature selection logged to MLFlow.
+🏃 View run Feature Selection at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/70e399dd5e5346838e825fd43d3c9cbb
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="experiment-5">
+<h1>EXPERIMENT 5<a class="headerlink" href="#experiment-5" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;PCA Experiment&quot;</span><span class="p">):</span>
+    <span class="c1">#let us apply PCA with up to 10 components</span>
+    <span class="n">n_components</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">)</span>
+    <span class="n">X_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+
+   
+    <span class="n">explained_variance</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+    <span class="c1"># Plotting the  Scree Plot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">explained_variance</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">explained_variance</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Scree Plot&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Principal Component&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Variance Explained&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="c1"># Log PCA results to MLFlow</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;pca_components&quot;</span><span class="p">,</span> <span class="n">n_components</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;explained_variance_sum&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">explained_variance</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">variance</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">explained_variance</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;pca_variance_pc</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">variance</span><span class="p">)</span>
+
+    <span class="c1">#let us  Determine the cumulative variance</span>
+    <span class="n">cumulative_variance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">explained_variance</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;explained_variance_cumulative&quot;</span><span class="p">,</span> <span class="n">cumulative_variance</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="c1"># let us Log the number of selected components (up to 10)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;selected_components&quot;</span><span class="p">,</span> <span class="n">n_components</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Selected </span><span class="si">{</span><span class="n">n_components</span><span class="si">}</span><span class="s2"> components for classification (up to PC 10).&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;PCA experiment logged to MLFlow.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/18875bfd9e77bb745a7256d14f880993a4de754167d4e9e453fdbd6ee031b34c.png" src="_images/18875bfd9e77bb745a7256d14f880993a4de754167d4e9e453fdbd6ee031b34c.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selected 10 components for classification (up to PC 10).
+PCA experiment logged to MLFlow.
+🏃 View run PCA Experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/df12da1a89494af0964d48063cb138f0
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="experiment-6-custom1">
+<h1>EXPERIMENT 6 (custom1)<a class="headerlink" href="#experiment-6-custom1" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">f1_score</span>
+
+<span class="c1"># let us Start a new MLFlow run for MLPClassifier</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;MLP_Product_Type&quot;</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">MLPClassifier</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">200</span><span class="p">,),</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span><span class="n">learning_rate</span><span class="o">=</span><span class="s1">&#39;adaptive&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Cross-validation setup</span>
+    <span class="n">skf</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+    <span class="n">accuracies</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">f1_scores</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">train_idx</span><span class="p">,</span> <span class="n">val_idx</span> <span class="ow">in</span> <span class="n">skf</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
+        <span class="n">X_fold_train</span><span class="p">,</span> <span class="n">X_fold_val</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_idx</span><span class="p">],</span> <span class="n">X_train</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">val_idx</span><span class="p">]</span>
+        <span class="n">y_fold_train</span><span class="p">,</span> <span class="n">y_fold_val</span> <span class="o">=</span> <span class="n">y_train</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_idx</span><span class="p">],</span> <span class="n">y_train</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">val_idx</span><span class="p">]</span>
+
+        <span class="c1"># Train the model</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_fold_train</span><span class="p">,</span> <span class="n">y_fold_train</span><span class="p">)</span>
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_fold_val</span><span class="p">)</span>
+
+        <span class="c1"># Evaluate model</span>
+        <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_fold_val</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+        <span class="n">f1</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_fold_val</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;macro&#39;</span><span class="p">)</span>
+
+        <span class="n">accuracies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">accuracy</span><span class="p">)</span>
+        <span class="n">f1_scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f1</span><span class="p">)</span>
+
+    <span class="c1"># Log the metrics</span>
+    <span class="n">mean_accuracy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">accuracies</span><span class="p">)</span>
+    <span class="n">mean_f1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">f1_scores</span><span class="p">)</span>
+
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;mean_accuracy&quot;</span><span class="p">,</span> <span class="n">mean_accuracy</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;mean_f1_score&quot;</span><span class="p">,</span> <span class="n">mean_f1</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MLP -&gt; Accuracy: </span><span class="si">{</span><span class="n">mean_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, F1-Score: </span><span class="si">{</span><span class="n">mean_f1</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MLP Experiment Completed.&quot;</span><span class="p">)</span>
+<span class="n">f1_scores1</span><span class="p">[</span><span class="s2">&quot;Mlp&quot;</span><span class="p">]</span><span class="o">=</span><span class="mf">0.71</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.10/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (30) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (30) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (30) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (30) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MLP -&gt; Accuracy: 0.71, F1-Score: 0.71
+🏃 View run MLP_Product_Type at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/a3d803c31d8c49c68795eeb08db7d7aa
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+MLP Experiment Completed.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="experiment-7-custom-experiment-2">
+<h1>EXPERIMENT 7 (custom experiment-2)<a class="headerlink" href="#experiment-7-custom-experiment-2" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mlflow</span>
+<span class="kn">import</span> <span class="nn">mlflow.sklearn</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">HistGradientBoostingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">f1_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+
+
+<span class="c1"># One-hot encode categorical columns consistently</span>
+<span class="n">categorical_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="s1">&#39;Market&#39;</span><span class="p">,</span> <span class="s1">&#39;Market_Size&#39;</span><span class="p">,</span> <span class="s1">&#39;Product&#39;</span><span class="p">]</span>
+<span class="n">X_train_encoded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">categorical_columns</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">X_test_encoded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">categorical_columns</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Align columns so that both train and test sets have the same features</span>
+<span class="n">X_train_encoded</span><span class="p">,</span> <span class="n">X_test_encoded</span> <span class="o">=</span> <span class="n">X_train_encoded</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">X_test_encoded</span><span class="p">,</span> <span class="n">join</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Scaling  the data (important for boosting models)</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">X_train_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_encoded</span><span class="p">)</span>
+<span class="n">X_test_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_encoded</span><span class="p">)</span>
+
+<span class="c1"># let us Start a new MLflow run to log this experiment</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">():</span>
+    <span class="c1"># Create the HistGradientBoosting model</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">HistGradientBoostingClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+    <span class="c1"># Set up the parameter grid for hyperparameter tuning</span>
+    <span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;max_iter&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span>  <span class="c1"># Number of boosting iterations</span>
+        <span class="s1">&#39;learning_rate&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">],</span>  <span class="c1"># Learning rate</span>
+        <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>  <span class="c1"># Maximum depth of the trees</span>
+        <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span>  <span class="c1"># Minimum samples in each leaf node</span>
+        <span class="s1">&#39;l2_regularization&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">],</span>  <span class="c1"># L2 regularization</span>
+        <span class="s1">&#39;max_bins&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">512</span><span class="p">],</span>  <span class="c1"># Number of bins for discretizing the data</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Set up GridSearchCV for hyperparameter tuning</span>
+    <span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+    <span class="c1"># Log the best hyperparameters found by GridSearchCV</span>
+    <span class="n">best_params</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_params</span><span class="p">(</span><span class="n">best_params</span><span class="p">)</span>  <span class="c1"># Log hyperparameters in MLflow</span>
+
+    <span class="c1"># we will Get the best model after hyperparameter tuning</span>
+    <span class="n">best_model</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+
+    <span class="c1"># Make predictions using the best model</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+
+    <span class="c1"># Evaluate the model</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;macro&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Log the evaluation metrics in MLflow</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s1">&#39;f1_score&#39;</span><span class="p">,</span> <span class="n">f1</span><span class="p">)</span>
+
+    <span class="c1"># Log the trained model in MLflow</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">sklearn</span><span class="o">.</span><span class="n">log_model</span><span class="p">(</span><span class="n">best_model</span><span class="p">,</span> <span class="s2">&quot;model&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Print the results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;HistGradientBoosting (Tuned) -&gt; Accuracy: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, F1-Score: </span><span class="si">{</span><span class="n">f1</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">f1_scores1</span><span class="p">[</span><span class="s1">&#39;hist gradient&#39;</span><span class="p">]</span><span class="o">=</span><span class="mf">0.19</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.10/dist-packages/sklearn/model_selection/_validation.py:528: FitFailedWarning: 
+324 fits failed out of a total of 648.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score=&#39;raise&#39;.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+324 fits failed with the following error:
+Traceback (most recent call last):
+  File &quot;/usr/local/lib/python3.10/dist-packages/sklearn/model_selection/_validation.py&quot;, line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File &quot;/usr/local/lib/python3.10/dist-packages/sklearn/base.py&quot;, line 1382, in wrapper
+    estimator._validate_params()
+  File &quot;/usr/local/lib/python3.10/dist-packages/sklearn/base.py&quot;, line 436, in _validate_params
+    validate_parameter_constraints(
+  File &quot;/usr/local/lib/python3.10/dist-packages/sklearn/utils/_param_validation.py&quot;, line 98, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The &#39;max_bins&#39; parameter of HistGradientBoostingClassifier must be an int in the range [2, 255]. Got 512 instead.
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+/usr/local/lib/python3.10/dist-packages/sklearn/model_selection/_search.py:1107: UserWarning: One or more of the test scores are non-finite: [0.99092047 0.99092047 0.99092047 0.99747738 0.99747738 0.99747738
+ 0.99932762 0.99932762 0.99932762 0.99949571 0.99932762 0.99932762
+ 0.99714187 0.99714187 0.99747806 0.99932762 1.         1.
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+ 0.99747738 0.99747738 0.99747738 1.         1.         1.
+ 0.99949571 0.99932762 0.99932762 1.         1.         1.
+ 0.99815078 1.         1.         1.         1.         1.
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+ 0.95493582 0.95493582 0.95493582 0.95493582 0.95493582 0.95493582
+ 0.97343108 0.97343108 0.97343108 0.99176146 0.99209782 0.99226591
+ 0.9904155  0.9904155  0.98923892 0.99327448 0.99377886 0.99411513
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+ 0.99092047 0.99092047 0.99092047 0.99747738 0.99747738 0.99747738
+ 0.99932762 0.99932762 0.99932762 0.99932762 0.99932762 0.99932762
+ 0.99714187 0.99714187 0.99747806 0.99932762 1.         1.
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+ 0.99747738 0.99747738 0.99747738 1.         1.         1.
+ 0.99949571 0.99932762 0.99932762 1.         1.         1.
+ 0.99815078 1.         1.         1.         1.         1.
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+ 0.95493582 0.95493582 0.95493582 0.95493582 0.95493582 0.95493582
+ 0.97343108 0.97343108 0.97343108 0.99176146 0.99209782 0.99209782
+ 0.9904155  0.9904155  0.98923892 0.99327448 0.99361068 0.99411513
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan]
+  warnings.warn(
+<span class=" -Color -Color-Red">2024/12/20 23:17:52 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>HistGradientBoosting (Tuned) -&gt; Accuracy: 0.29, F1-Score: 0.19
+🏃 View run masked-dog-48 at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0/runs/7a09b33203ed4cbeba57617e9dfbfbf2
+🧪 View experiment at: https://dagshub.com/ushasreepeketi/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="f1-score-plotting-and-choosing-the-best-model">
+<h1>F1 SCORE PLOTTING AND CHOOSING THE BEST MODEL<a class="headerlink" href="#f1-score-plotting-and-choosing-the-best-model" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f1_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">f1_scores1</span><span class="o">.</span><span class="n">items</span><span class="p">()),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Model&quot;</span><span class="p">,</span> <span class="s2">&quot;F1-Score&quot;</span><span class="p">])</span>
+<span class="c1"># Creating a seaborn barplot to compare F1-scores across models and selecting the best model</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">f1_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Model&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;F1-Score&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;F1-Score Comparison of Different Models&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Model&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;F1-Score&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-68-4ebd75da5026&gt;:4: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=f1_df, x=&#39;Model&#39;, y=&#39;F1-Score&#39;, palette=&quot;viridis&quot;)
+</pre></div>
+</div>
+<img alt="_images/4c2bae08bb4091c14a722572b519a4bc99157df91b2edff50be8edd8da5985e9.png" src="_images/4c2bae08bb4091c14a722572b519a4bc99157df91b2edff50be8edd8da5985e9.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="saving-the-model-using-joblib">
+<h1>SAVING THE MODEL USING JOBLIB<a class="headerlink" href="#saving-the-model-using-joblib" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+
+
+<span class="c1"># let us save the best model which is random forest </span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">random_forest_pipeline</span>  
+
+<span class="c1"># Save the model to a file</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="s1">&#39;final_model.pkl&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model saved successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model saved successfully!
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fast-api-code-creation">
+<h1>FAST API CODE (creation):<a class="headerlink" href="#fast-api-code-creation" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># FAST API CODE (creation):</span>
+
+<span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1">#Loading  the best model we have got which is random forest</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;final_model.pkl&#39;</span><span class="p">)</span>
+
+<span class="c1">#let us Initialize the FastAPI app</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+
+<span class="c1">#let us mapping of encoded labels to product types</span>
+<span class="n">product_type_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;Coffee&quot;</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Espresso&quot;</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;Herbal Tea&quot;</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;Tea&quot;</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">PredictionRequest</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">data</span><span class="p">:</span> <span class="nb">dict</span>  <span class="c1"># It accept data as a dictionary where keys are feature names and values are their respective values.</span>
+
+<span class="c1">#let us define the root route</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">read_root</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Welcome to the FastAPI application!&quot;</span><span class="p">}</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/predict/&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">PredictionRequest</span><span class="p">):</span>
+    <span class="c1"># let us convert input data into a DataFrame</span>
+    <span class="n">input_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">request</span><span class="o">.</span><span class="n">data</span><span class="p">])</span>
+    
+    <span class="c1"># letus predict using the model </span>
+    <span class="n">prediction</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+    
+    <span class="c1"># Mapping the numeric prediction to the product type</span>
+    <span class="n">predicted_product</span> <span class="o">=</span> <span class="n">product_type_mapping</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;Unknown&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;prediction&quot;</span><span class="p">:</span> <span class="n">predicted_product</span><span class="p">}</span>
+
+<span class="c1">#let us serve the model</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">uvicorn</span>
+    <span class="n">uvicorn</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="docker-file">
+<h1>docker file<a class="headerlink" href="#docker-file" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#let us  Use the latest Python image from Docker Hub with ARM64 architecture support</span>
+
+<span class="n">FROM</span> <span class="o">--</span><span class="n">platform</span><span class="o">=</span><span class="n">linux</span><span class="o">/</span><span class="n">arm64</span> <span class="n">python</span><span class="p">:</span><span class="mf">3.11</span><span class="o">-</span><span class="n">slim</span>
+
+<span class="c1">#Set the working directory inside the container</span>
+<span class="n">WORKDIR</span> <span class="o">/</span><span class="n">app</span>
+
+<span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> \
+    <span class="n">build</span><span class="o">-</span><span class="n">essential</span> \
+    <span class="n">cmake</span> \
+    <span class="n">python3</span><span class="o">-</span><span class="n">dev</span> \
+    <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="o">/*</span>
+
+<span class="n">COPY</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span> <span class="o">.</span>
+
+<span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="o">-</span><span class="nb">dir</span> <span class="o">-</span><span class="n">U</span> <span class="n">pip</span>
+
+<span class="c1">#Install Python dependencies listed in requirements.txt</span>
+<span class="n">RUN</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="o">-</span><span class="nb">dir</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="c1">#Copy the FastAPI application to the container</span>
+<span class="n">COPY</span> <span class="o">.</span> <span class="o">.</span>
+
+<span class="c1">#Expose port 8000 for the FastAPI app to run</span>
+<span class="n">EXPOSE</span> <span class="mi">8000</span>
+
+<span class="c1">#Command to run the FastAPI application using Uvicorn</span>
+<span class="n">CMD</span> <span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span> <span class="s2">&quot;main:app&quot;</span><span class="p">,</span> <span class="s2">&quot;--host&quot;</span><span class="p">,</span> <span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="s2">&quot;--port&quot;</span><span class="p">,</span> <span class="s2">&quot;8000&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pushed-to-dockerhub">
+<h1>PUSHED TO DOCKERHUB<a class="headerlink" href="#pushed-to-dockerhub" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="deployed-the-docker-image-to-aws-ecs">
+<h1>deployed the docker image to aws ecs<a class="headerlink" href="#deployed-the-docker-image-to-aws-ecs" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="stream-lit-code">
+<h1>STREAM LIT (CODE):<a class="headerlink" href="#stream-lit-code" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># STREAM LIT (CODE):</span>
+<span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Best Product Type to sell&quot;</span><span class="p">)</span>
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;By Usha Sree Peketi&quot;</span><span class="p">)</span>
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Enter the details to check which product to sell!&quot;</span><span class="p">)</span>
+
+<span class="c1">#Input Fields for the API</span>
+<span class="n">area_code</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Area Code&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">max_value</span><span class="o">=</span><span class="mi">999</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#Providing the dropdown options for categorical columns</span>
+<span class="n">state</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;State&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Connecticut&#39;</span><span class="p">,</span> <span class="s1">&#39;Washington&#39;</span><span class="p">,</span> <span class="s1">&#39;California&#39;</span><span class="p">,</span> <span class="s1">&#39;Texas&#39;</span><span class="p">,</span> <span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;Ohio&#39;</span><span class="p">,</span>
+                               <span class="s1">&#39;Illinois&#39;</span><span class="p">,</span> <span class="s1">&#39;Louisiana&#39;</span><span class="p">,</span> <span class="s1">&#39;Florida&#39;</span><span class="p">,</span> <span class="s1">&#39;Wisconsin&#39;</span><span class="p">,</span> <span class="s1">&#39;Colorado&#39;</span><span class="p">,</span> <span class="s1">&#39;Missouri&#39;</span><span class="p">,</span> 
+                               <span class="s1">&#39;Iowa&#39;</span><span class="p">,</span> <span class="s1">&#39;Massachusetts&#39;</span><span class="p">,</span> <span class="s1">&#39;Oklahoma&#39;</span><span class="p">,</span> <span class="s1">&#39;Utah&#39;</span><span class="p">,</span> <span class="s1">&#39;Oregon&#39;</span><span class="p">,</span> <span class="s1">&#39;New Mexico&#39;</span><span class="p">,</span> 
+                               <span class="s1">&#39;New Hampshire&#39;</span><span class="p">,</span> <span class="s1">&#39;Nevada&#39;</span><span class="p">])</span>
+
+<span class="n">market</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;Market&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;East&#39;</span><span class="p">,</span> <span class="s1">&#39;West&#39;</span><span class="p">,</span> <span class="s1">&#39;South&#39;</span><span class="p">,</span> <span class="s1">&#39;Central&#39;</span><span class="p">])</span>
+
+<span class="n">market_size</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;Market Size&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Small Market&#39;</span><span class="p">,</span> <span class="s1">&#39;Major Market&#39;</span><span class="p">])</span>
+
+<span class="n">product</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Columbian&#39;</span><span class="p">,</span> <span class="s1">&#39;Green Tea&#39;</span><span class="p">,</span> <span class="s1">&#39;Caffe Mocha&#39;</span><span class="p">,</span> <span class="s1">&#39;Decaf Espresso&#39;</span><span class="p">,</span> <span class="s1">&#39;Lemon&#39;</span><span class="p">,</span> <span class="s1">&#39;Mint&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;Darjeeling&#39;</span><span class="p">,</span> <span class="s1">&#39;Decaf Irish Cream&#39;</span><span class="p">,</span> <span class="s1">&#39;Chamomile&#39;</span><span class="p">,</span> <span class="s1">&#39;Earl Grey&#39;</span><span class="p">,</span> <span class="s1">&#39;Caffe Latte&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;Amaretto&#39;</span><span class="p">,</span> <span class="s1">&#39;Regular Espresso&#39;</span><span class="p">])</span>
+
+<span class="c1">#Input Fields for numerical data</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Sales&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">profit</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Profit&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">cogs</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;COGS&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">marketing</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Marketing&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">total_expenses</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Total Expenses&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">margin</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">number_input</span><span class="p">(</span><span class="s2">&quot;Margin&quot;</span><span class="p">,</span> <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+
+<span class="c1">#Button to Trigger Prediction</span>
+<span class="k">if</span> <span class="n">st</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="s2">&quot;Classify&quot;</span><span class="p">):</span>
+    <span class="c1"># Validate input to ensure all fields are filled</span>
+    <span class="k">if</span> <span class="n">state</span> <span class="ow">and</span> <span class="n">market</span> <span class="ow">and</span> <span class="n">market_size</span> <span class="ow">and</span> <span class="n">product</span> <span class="ow">and</span> <span class="n">area_code</span> <span class="ow">and</span> <span class="n">sales</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">profit</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">cogs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">marketing</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">total_expenses</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">margin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">api_url</span> <span class="o">=</span> <span class="s2">&quot;http://18.217.75.50:8000/predict/&quot;</span>
+            
+            <span class="c1"># Construct the payload</span>
+            <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;Area_Code&quot;</span><span class="p">:</span> <span class="n">area_code</span><span class="p">,</span>
+                    <span class="s2">&quot;State&quot;</span><span class="p">:</span> <span class="n">state</span><span class="p">,</span>
+                    <span class="s2">&quot;Market&quot;</span><span class="p">:</span> <span class="n">market</span><span class="p">,</span>
+                    <span class="s2">&quot;Market_Size&quot;</span><span class="p">:</span> <span class="n">market_size</span><span class="p">,</span>
+                    <span class="s2">&quot;Sales&quot;</span><span class="p">:</span> <span class="n">sales</span><span class="p">,</span>
+                    <span class="s2">&quot;Profit&quot;</span><span class="p">:</span> <span class="n">profit</span><span class="p">,</span>
+                    <span class="s2">&quot;COGS&quot;</span><span class="p">:</span> <span class="n">cogs</span><span class="p">,</span>
+                    <span class="s2">&quot;Product&quot;</span><span class="p">:</span> <span class="n">product</span><span class="p">,</span>
+                    <span class="s2">&quot;Marketing&quot;</span><span class="p">:</span> <span class="n">marketing</span><span class="p">,</span>
+                    <span class="s2">&quot;Total_Expenses&quot;</span><span class="p">:</span> <span class="n">total_expenses</span><span class="p">,</span>
+                    <span class="s2">&quot;Margin&quot;</span><span class="p">:</span> <span class="n">margin</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            
+            <span class="c1"># Make POST Request</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+            
+            <span class="c1"># Parse Response</span>
+            <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+                <span class="n">st</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Prediction: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;prediction&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">st</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;detail&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Unable to get prediction from the API.&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">st</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;An error occurred: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">st</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Please fill out all required fields.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">st</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Fill in the fields above and click &#39;Classify&#39; to get a prediction.&quot;</span><span class="p">)</span>
+
+<span class="c1">#Footer</span>
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Powered by Streamlit &amp; FastAPI&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Notebook1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-to-the-data-base">CONNECTING TO THE DATA BASE</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-3nf-database">CREATING THE 3NF DATABASE</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-the-data-sales-csv-inserting-into-database">READING THE DATA SALES.CSV INSERTING INTO DATABASE</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#veryfying-the-data-inserted">VERYFYING THE DATA INSERTED</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fetching-the-data-from-database-into-pandas-data-frame">FETCHING THE DATA FROM DATABASE INTO PANDAS DATA FRAME</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-exploration-and-eda">DATA EXPLORATION AND EDA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#test-train-split">TEST TRAIN SPLIT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-matrix-and-data-cleaning-tasks">CORRELATION MATRIX and DATA CLEANING TASKS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-outliers">plotting outliers</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dagshub-authenction-for-ml-flow">DAGSHUB AUTHENCTION FOR ML FLOW</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-1-logistic-regression">EXPERIMENT -1 LOGISTIC REGRESSION</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-2-logistsic-random-forest-ridge">EXPERIMENT -2 (logistsic,random forest,ridge)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-2-xbg">EXPERIMENT -2 XBG</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-3">EXPERIMENT 3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-4">EXPERIMENT 4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-5">EXPERIMENT 5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-6-custom1">EXPERIMENT 6 (custom1)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-7-custom-experiment-2">EXPERIMENT 7 (custom experiment-2)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#f1-score-plotting-and-choosing-the-best-model">F1 SCORE PLOTTING AND CHOOSING THE BEST MODEL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#saving-the-model-using-joblib">SAVING THE MODEL USING JOBLIB</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-api-code-creation">FAST API CODE (creation):</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-file">docker file</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushed-to-dockerhub">PUSHED TO DOCKERHUB</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployed-the-docker-image-to-aws-ecs">deployed the docker image to aws ecs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#stream-lit-code">STREAM LIT (CODE):</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

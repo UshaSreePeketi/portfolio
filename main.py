@@ -3,13 +3,13 @@ from pydantic import BaseModel
 import joblib
 import pandas as pd
 
-# Load the RandomForest model pipeline
+# Loading  the best model we have got which is random forest
 model = joblib.load('final_model.pkl')
 
-# Initialize FastAPI app
+# let us Initialize the FastAPI app
 app = FastAPI()
 
-# Example mapping of encoded labels to product types
+# let us mapping of encoded labels to product types
 product_type_mapping = {
     0: "Coffee",
     1: "Espresso",
@@ -18,27 +18,27 @@ product_type_mapping = {
 }
 
 class PredictionRequest(BaseModel):
-    data: dict  # Accept data as a dictionary where keys are feature names and values are their respective values.
+    data: dict  # It accept data as a dictionary where keys are feature names and values are their respective values.
 
-# Define the root route
+#let us define the root route
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the FastAPI application!"}
 
 @app.post("/predict/")
 async def predict(request: PredictionRequest):
-    # Convert input data into a DataFrame
+    # let us convert input data into a DataFrame
     input_data = pd.DataFrame([request.data])
     
-    # Predict using the model pipeline
+    # letus predict using the model 
     prediction = model.predict(input_data)
     
-    # Map the numeric prediction to the product type
+    # Mapping the numeric prediction to the product type
     predicted_product = product_type_mapping.get(prediction[0], "Unknown")
     
     return {"prediction": predicted_product}
 
-# Serve the application
+# let us serve the model
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
