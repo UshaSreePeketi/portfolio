@@ -3,6 +3,8 @@
 This project focuses on developing a robust machine learning pipeline for predicting and analyzing the best *Product Type*  (Espresso, Coffee, Herbal Tea, Tea) to sell according to the various features associated in the market, leveraging modern tools and frameworks for efficient deployment and reproducibility. The project integrates interactive visualization, data versioning, containerization, and cloud deployment to ensure scalability and accessibility.
 
 ---
+## Video Presentation
+👉 **[View](https://drive.google.com/file/d/1sqXXL7ET0O3kDViabmQ_4aZzIGrl07M1/view?usp=sharing)** 
 
 ## Key Components
 
